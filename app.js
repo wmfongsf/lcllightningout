@@ -58,6 +58,8 @@ app.get('/', cors(), function (req, res) {
 
       app.locals.oauthtoken = user.access_token;
       app.locals.lightningEndPointURI = lightningEndPointURI;
+      app.locals.appName = 'ContacViewerLightningApp';
+      app.locals.cmpName = 'ContacViewerCmp';
       res.redirect('/home');
     } catch (err) {
       console.error(err);

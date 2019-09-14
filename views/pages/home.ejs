@@ -20,8 +20,8 @@
           var token = "<%= oauthtoken %>";
           console.log(url);
           console.log(token);
-            $Lightning.use("c:ContacViewerLightningApp", function() {
-                  $Lightning.createComponent("c:ContacViewerCmp", {},
+            $Lightning.use("c:<%= appName %>", function() {
+                  $Lightning.createComponent("c:<%= cmpName %>", {},
                      "leaderboard",
                       function(cmp) {
                          // do some stuff
