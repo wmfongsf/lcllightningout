@@ -11,6 +11,8 @@ var authtokenUrl = process.env.CLASSIC_DOMAIN_URI + '/services/oauth2/token';
 var lightningEndPointURI = process.env.LIGHTNING_DOMAIN_URI; //"https://ffaizi-20190610-demo.lightning.force.com"
 var username = process.env.USERNAME; 
 var password = process.env.PASSWORD; 
+var appName =  process.env.LightningAppName; 
+var cmpName =  process.env.LightningCmpName; 
 
 var app = express();
 
@@ -58,8 +60,8 @@ app.get('/', cors(), function (req, res) {
 
       app.locals.oauthtoken = user.access_token;
       app.locals.lightningEndPointURI = lightningEndPointURI;
-      app.locals.appName = 'ContacViewerLightningApp';
-      app.locals.cmpName = 'ContacViewerCmp';
+      app.locals.appName = appName;
+      app.locals.cmpName = cmpName;
       res.redirect('/home');
     } catch (err) {
       console.error(err);
