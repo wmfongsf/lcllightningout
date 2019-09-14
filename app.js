@@ -6,9 +6,9 @@ var fetch = require('cross-fetch');
 var cors = require('cors');
 
 var consumerId = process.env.CLIENT_ID;
-var consumerSecret = process.env.CLIENT_SECRET;//https://ffaizi-20190610-demo.my.salesforce.com
+var consumerSecret = process.env.CLIENT_SECRET;
 var authtokenUrl = process.env.CLASSIC_DOMAIN_URI + '/services/oauth2/token';
-var lightningEndPointURI = process.env.LIGHTNING_DOMAIN_URI; //"https://ffaizi-20190610-demo.lightning.force.com"
+var lightningEndPointURI = process.env.LIGHTNING_DOMAIN_URI; 
 var username = process.env.USERNAME; 
 var password = process.env.PASSWORD; 
 var appName =  process.env.LightningAppName; 
