@@ -11,7 +11,7 @@
     "cors": "2.8.1",
     "cross-fetch": "^3.0.4",
     "ejs": "^2.4.1",
-    "express": "^4.13.4",
+    "express": "^4.17.3",
     "form-data": "^2.5.0",
     "nforce": "*"
   },
